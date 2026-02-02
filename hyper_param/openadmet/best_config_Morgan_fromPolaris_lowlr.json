@@ -1,0 +1,13 @@
+{
+    "train_loop_config": {
+        "depth": 3,
+        "ffn_hidden_dim": 800,
+        "ffn_num_layers": 2,
+        "message_hidden_dim": 300,
+        "dropout": 0.20998817947423437,
+        "lr": 1.447e-5,
+        "warmup": 2,
+        "batch_size": 128,
+        "weight_decay": 0.005867963386786931
+    }
+}
