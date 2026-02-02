@@ -28,7 +28,21 @@ For featurisation of molecules, we mainly used graph-based representation (MolGr
 ## 3. Hyperparameter optimisation
 We tested automatic hyperparameter optimisation with Raytune's Tree-structured Parzen Estimators algorithm, then compared it with manual hyperparameters picking.
 
-Eventually, manual decision yields better performance.
+Eventually, manual decision yields better performance. The hyperparameters we chose are listed here:
+
+| Hyperparameter      | Value    |
+|---------------------|---------:|
+| depth               | 6        |
+| ffn_hidden_dim      | 512      |
+| ffn_num_layers      | 2        |
+| message_hidden_dim  | 2048     |
+| dropout             | 0.1      |
+| init_lr             | 0.000001 |
+| max_lr              | 0.001    |
+| final_lr            | 0.0001   |
+| warmup              | 5        |
+| batch_size          | 256      |
+| weight_decay        | 0.0001   |
 
 ## 4. Model performance during training
 We evaluate models based on 5 validation sets from random splits, then average the MAE calculated on each set. MAE metrics are estimated separately for each ADMET endpoints.
